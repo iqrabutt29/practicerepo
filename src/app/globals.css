@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-}
+} */
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -18,16 +18,88 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color:  rgba(17, 19, 21);
+  height: 100vh;
+  overflow: auto;
 }
 
 @layer utilities {
+  .background{
+    background-color: rgba(26, 29, 31, 1);
+  }
+  .percentage{
+    color: rgba(255, 106, 85, 1);
+    background-color: rgba(255, 231, 228, 1);
+  }
   .text-balance {
     text-wrap: balance;
   }
+  .table-header{
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  .dim-text{
+   color:rgba(111, 118, 126, 1);
+  }
+  .bg-primaryColor {
+    background-color: #2A85FF; 
+  }
+  .bg-search{
+    background-color:rgba(39, 43, 48, 1);
+  }
+  .help-border{
+    border-color: rgba(39, 43, 48, 1);
+  }
+  .bg-card{
+    background-color: rgba(26, 29, 31, 1);
+
+  }
+  .card-shadow{
+    box-shadow: 0px 20px 24px 0px rgba(0, 0, 0, 0.5);
+background-color: rgba(35, 38, 39, 1);
+  }
+.bg-border{
+  border-color: rgba(17, 19, 21);
 }
+  .bg-sidebar{
+    background-color: rgba(26, 29, 31, 1);
+  }
+  .chart-line::before {
+    content: "";
+    position: absolute;
+    margin-left: -37px;
+    margin-top: 5px;
+    /* top: 110px; */
+    /* left: 345px; */
+    width: 32px;
+    border-radius: 5px;
+    height: 16px;
+    background-color: rgba(202, 189, 255, 1);
+    transform: rotate(90deg);
+  }
+  .heading-line::before {
+    content: "";
+    position: absolute;
+    margin-left: -32px;
+    margin-top: 6px;
+    width: 32px;
+    /* top: 111px; */
+    /* right: 280px; */
+    border-radius: 5px;
+    height: 16px;
+    background-color: rgba(255, 188, 153, 1);
+    /* display: block; */
+    transform: rotate(90deg);
+}
+  }
+  .graph-line::before {
+    content: "";
+    position: absolute;
+    width: 32px;
+   left: 357px;
+   margin-top: 6px;
+    border-radius: 5px;
+    height: 16px;
+    background-color:rgba(181, 228, 202, 1);
+    /* display: block; */
+    transform: rotate(90deg);
+  }
